@@ -1,0 +1,108 @@
+@import 'animate.css';
+body{
+    width: 90vw;
+    margin: auto;
+    background-color: rgb(254, 223, 174);
+}
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        cursor: pointer;
+    }
+}
+nav{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    margin: 50px 0px;
+    background-color: rgb(90, 78, 78);
+    ul{
+        list-style: none;
+    align-self: center;
+    }
+    li{
+        display: inline;
+        margin:0px 20px;
+        
+    }
+}
+
+
+.hero{
+    display: flex;
+    background-color:rgb(213, 213, 213);
+    margin-bottom: 2em;
+    border-radius: 20px;
+    button{
+        animation: 5s  fadeIn;
+    }
+    img{
+        animation: 1s fadeIn;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    p{
+        animation: 1s backInDown;
+        margin: 20px 10px;
+    }
+}
+button {
+        display: inline-block;
+        margin: 4px;
+        background-color: white;
+        color: gray;
+        border: 1px solid rgb(213, 213, 213);
+        vertical-align: middle;
+        border-radius: 0px;
+        padding: 10px;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        &:first-of-type{
+            background-color: aqua;
+        }
+        &:nth-of-type(2){
+            background-color: chartreuse;
+        }
+      
+      &:hover, &:focus, &:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+      }}
+
+  
+
+
+.blocco-immagini{
+    &:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+    &:nth-of-type(2){
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius:20px;
+    }
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .immagine{
+        width: calc(50% / 2);
+        margin: 5px;
+        box-shadow: 2px 2px 5px ;
+        border-radius: 20px;
+        border: 2px solid white;
+        img{
+            width: 100%;
+            border-radius: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
